@@ -147,11 +147,12 @@ const form = document.querySelector(".contact-form");
 
 if (form) {
   form.addEventListener("submit", (e) => {
+    console.log("clicou!");
     e.preventDefault();
 
     const nome = form.querySelector('input[placeholder="Seu nome"]').value;
     const email = form.querySelector('input[placeholder="Seu melhor e-mail"]').value;
-    const telefone = form.querySelector('input[Telefone/WhatsApp"]').value;
+    const telefone = form.querySelector('input[placeholder="Telefone / WhatsApp"]').value;
     const mensagem = form.querySelector('textarea').value;
 
     const numeroWhatsapp = "5531992272821"; 
